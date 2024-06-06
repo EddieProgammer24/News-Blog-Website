@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: lightgray;
+    font-family: 'Lora',serif;
+}
+header{
+    background-color: black;
+    height: 91px;
+}
+header *{
+    color: white;
+}
+header .logo{
+    float: left;
+    height: inherit;
+}
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li ul{
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    width: 180px;
+    display: none;
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li ul li{
+    width: 100%;
+}
+header ul li ul li a{
+    padding: 10px;
+    background: white;
+    color: gray;
+}
+header ul li ul li a.logout{
+    color: red;
+}
+header ul li ul li a:hover{
+    background: darkgreen;
+}
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+header ul li a:hover{
+    background: darkgreen;
+    transition: 0.5s;
+}
+header .menu-toggle{
+    display: none;
+}
