@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
@@ -10,6 +12,22 @@ body{
     background-color: lightgray;
     font-family: 'Lora',serif;
 }
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
 h1,
 h2,
 h3,
@@ -23,6 +41,22 @@ h6{
 a{
     text-decoration: none;
     color: inherit;
+}
+.clearfix::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.btn{
+    padding: .5rem 1rem;
+    background: lightgreen;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.btn:hover{
+    color: white !important;
+    background-color: darkgreen;
 }
 header{
     background-color: black;
@@ -273,6 +307,65 @@ a.button:hover {
     height: 200px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+/*CONTENT*/
+.content{
+    width: 90%;
+    margin: 30px auto 30px;
+}
+
+.content .main-content{
+    width: 70%;
+    float: left;
+}
+
+.content .main-content .post{
+    width: 95%;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+}
+
+.content .main-content .post .read-more{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #005255;
+    background: transparent;
+    border-radius: 0px;
+    color: #005255 !important;
+}
+
+.content .main-content .post .read-more:hover{
+    background: #005255 ;
+    color: white !important;
+    transition: .25s;
+}
+
+.content .main-content .post .post-image{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.content .main-content .post .post-preview{
+    width: 60%;
+    padding: 10px;
+    float: right;
+}
+
+.content .main-content .recent-post-title{
+    margin: 20px;
+}
+
+.content .sidebar{
+    width: 30%;
+    float: left;
+    border: 1px dashed green;
+    height: 30px;
 }
 
 /*Media Queries*/
