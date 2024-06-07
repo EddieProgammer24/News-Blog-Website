@@ -12,6 +12,9 @@
     <!-----Google Fonts ------->
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+
 
    
     <title>Msaada Marafiki</title>
@@ -42,6 +45,60 @@
             </li>
         </ul>
     </header>
+
+    <section class="main swiper mySwiper">
+        <div class="slider-wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="../assets/images/burger.jpg" class="image">
+                <div class="image-data">
+                    <span class="text">Msaada Marafiki</span>
+                    <h2>Msaada Marafiki Trust</h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="../assets/images/burger.jpg" class="image">
+                <div class="image-data">
+                    <span class="text">Msaada Marafiki</span>
+                    <h2>Msaada Marafiki Trust</h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="../assets/images/burger.jpg" class="image">
+                <div class="image-data">
+                    <span class="text">Msaada Marafiki</span>
+                    <h2>Msaada Marafiki Trust</h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
     <!----JQuery Source-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
