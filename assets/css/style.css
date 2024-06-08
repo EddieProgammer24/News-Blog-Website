@@ -6,7 +6,8 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body{
+html,body{
+    height: 100%;
     padding: 0px;
     margin: 0px;
     background-color: lightgray;
@@ -132,6 +133,9 @@ header .menu-toggle{
 }
 .page-wrapper a:hover{
     color: darkgreen;
+}
+.page-wrapper{
+    min-height: 100%;
 }
 /* Container for the entire slider */
 /* Container for the entire slider */
@@ -407,6 +411,28 @@ a.button:hover {
 .content .sidebar .section.topics ul li a:hover{
     padding-left: 10px;
     transition: 0.3s;
+}
+
+/*Footer*/
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+}
+.footer .footer-content{
+    height: 350px;
+}
+.footer .footer-bottom{
+    background-color: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
 }
 
 /*Media Queries*/
